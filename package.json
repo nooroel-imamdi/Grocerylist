@@ -1,0 +1,39 @@
+{
+  "name": "browser-technologies-her",
+  "version": "1.0.0",
+  "description": "list of grocery",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "expose": "ngrok http 7000",
+    "nodemon": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nooroel-imamdi/browser-technologies-her.git"
+  },
+  "keywords": [
+    "minor",
+    "webdevelopment",
+    "cmd",
+    "hva",
+    "grocery",
+    "browser",
+    "technologie"
+  ],
+  "author": "Nooroel Imamdi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nooroel-imamdi/browser-technologies-her/issues"
+  },
+  "homepage": "https://github.com/nooroel-imamdi/browser-technologies-her#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "ngrok": "^2.2.9"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
