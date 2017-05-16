@@ -9,12 +9,19 @@ In de minor Web Development 2017 is in het tweede blok het vak Browser Technolog
 Maak een demo op basis van een use case. Zorg dat alle gebruikers, met alle browsers, in iedere context minimaal de core functionaliteit te zien/horen/voelen krijgen. Bouw je demo in 3 lagen, volgens het principe van Progressive Enhancement. Gebruik als enhanced feature een (hippe, innovatieve, vooruitstrevende) Browser Technologie die je gaat onderzoeken op functionaliteit, toegankelijkheid en (browser) ondersteuning.
 
 ## User case
-Een aantal user cases zijn van te voren aangeboden door de docenten van dit vak. De user case die ik zal uitwerken luidt als volgt: ‘Ik wil boodschappen-om-tostis-te-maken in mijn boodschappenlijstje kunnen gooien’.
+Een aantal user cases zijn van te voren aangeboden door de docenten van dit vak. De user case die ik zal uitwerken luidt als volgt:
+
+> ‘Ik wil boodschappen-om-tostis-te-maken in mijn boodschappenlijstje kunnen gooien’.
 
 ## Core functionality
 De basis functionaliteit is dat de gebruiker een lijstje kan maken van alles dat er nodig is om tostis te maken.
 
 ## Stappenplan
+
+De applicatie wordt in de volgende etappes opgebouwd
+- `HTML` (basislaag)
+- `CSS`
+- `JavaScript`
 
 ### Wat heb ik nodig om deze toepassing tot stand te brengen?
 - `form`-elementen waarmee een formulier wordt aangemaakt
@@ -25,7 +32,7 @@ De basis functionaliteit is dat de gebruiker een lijstje kan maken van alles dat
 - `ejs` wordt gebruikt als template-engine.
 - `drag and drop` waarmee elementen op de pagina d.m.v. slepen verplaats kunnen worden.
 
-### HTML/CSS
+### HTML
 
 #### `div` versus `html5`-elementen
 Met de komst van de `html5`-elementen is het mogelijk om een html-opmaak steeds vaker te voorzien van semantische codering. De vraag die binnen dit vak luidt is echter:
@@ -52,14 +59,12 @@ In Internet Explorer 8 komen we echter het volgende probleem op het spoor:
 
 Om deze reden heb ik ervoor gekozen om het `div`-element te gebruiken, in plaats van de nieuwe semantische HTML5-elementen. Het `div`-element wordt namelijk wél ondersteund in oudere webbrowsers én Internet Explorer.
 
-
 ### JavaScript
-
 
 ## Features
 - Drag and drop ingrediënten
 - Ingrediënten toevoegen d.m.v. button
-- boodschappenlijstje leegmaken
+- Boodschappenlijstje leegmaken
 
 ### Drag and Drop ingrediënten
 ![Support Drag and Drop](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/draganddropsupport.png?raw=true)
@@ -76,6 +81,23 @@ In Microsoft Internet Explorer en Microsoft Edge wordt deze feature in de meest 
 
 #### Fallback
 De fallback voor *Drag and Drop* is het `input`-element waarmee de gebruikers, die niet de mogelijkheid hebben tot *Drag and Drop*, alsnog de *core-functionaliteit* kunnen uitvoeren, namelijk het toevoegen van een ingrediënt aan het boodschappenlijstje door op een button te klikken.
+
+Aangezien dit `server-side` wordt afgehandeld, is deze fallback ook operationeel indien de gebruik niet beschikt over `JavaScript`.
+
+### Boodschappenlijstje leegmaken
+Het leegmaken van het boodschappenlijstje wordt eveneens afgehandeld middels `server-side`. Hierdoor wordt deze feature ook ondersteund indien er geen `JavaScript beschikbaar is.`
+
+## Progressive Enhancement
+De `HTML` is de basislaag van de website. Hierin wordt de structuur beschreven waarbinnen de content zich bevindt. Hetgeen na deze basislaag komt is een extra laag, oftewel een enhancement: verrijkingen van de basislaag.
+
+Zoals eerder stond beschreven is de *core functionality*:
+
+> Ik wil boodschappen-om-tostis-te-maken in mijn boodschappenlijstje kunnen gooien
+
+### HTML
+![HTML only](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/htmlonly.png?raw=true)
+
+
 
 ## Installatie
 
@@ -117,3 +139,4 @@ nodemon
 - [HTML5 Drag and Drop, W3Schools](https://www.w3schools.com/html/html5_draganddrop.asp)
 - [MDN - Dragstart](https://developer.mozilla.org/en-US/docs/Web/Events/dragstart)
 - [HTML5 Browser Support, W3Schools](https://www.w3schools.com/html/html5_browsers.asp)
+- [Can I use](https://caniuse.com/)
