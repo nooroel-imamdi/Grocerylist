@@ -1,0 +1,16 @@
+html,body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+/**/
+.my-grocery-list{
+  background-color: #FFFBCC;
+}
+/* Affordance */
+img{
+  cursor: -webkit-grab;
+	cursor: -moz-grab;
+	cursor: move;
+}
