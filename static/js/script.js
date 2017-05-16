@@ -10,9 +10,9 @@ function allowDrop(e) {
 	e.preventDefault();
 }
 
-function dontDrop(e) {
-	e.preventDefault();
-}
+// function dontDrop(e) {
+// 	e.preventDefault();
+// }
 
 function drop(e) {
 	e.preventDefault();
@@ -42,7 +42,7 @@ groceryList.forEach(function (e) {
 });
 
 groceryList.forEach(function (e) {
-  return e.addEventListener('dragleave', dontDrop);
+  return e.addEventListener('dragleave', allowDrop);
 });
 
 groceryList.forEach(function (e) {
