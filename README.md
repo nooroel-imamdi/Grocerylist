@@ -62,7 +62,7 @@ Om deze reden heb ik ervoor gekozen om het `div`-element te gebruiken, in plaats
 - boodschappenlijstje leegmaken
 
 ### Drag and Drop ingrediënten
-![Support Drag and Drop]()
+![Support Drag and Drop](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/draganddropsupport.png?raw=true)
 
 > Drag and drop wordt door `42.11%` van de browsers ondersteund.
 
