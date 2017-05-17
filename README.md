@@ -84,6 +84,9 @@ De fallback voor *Drag and Drop* is het `input`-element waarmee de gebruikers, d
 
 Aangezien dit `server-side` wordt afgehandeld, is deze fallback ook operationeel indien de gebruiker niet beschikt over `JavaScript`.
 
+### Ingrediënten toevoegen d.m.v. button
+Naast de *drag and drop*-methode is het ook mogelijk om je lijstje aan te vullen door op de knop met daarop het gewenste product te klikken. Zoals hierboven wordt beschreven, functioneert dit ook als fallback voor de *drag and drop*-optie.
+
 ### Boodschappenlijstje leegmaken
 Het leegmaken van het boodschappenlijstje wordt eveneens afgehandeld middels `server-side`. Hierdoor wordt deze feature ook ondersteund indien er geen `JavaScript` beschikbaar is.
 
