@@ -1,44 +1,45 @@
 <% include partials/head.ejs %>
 
-  <div class="my-grocery-list">
-    <a href="/clear">Leeg maken</a>
-    <h1>Mijn boodschappenlijstje</h1>
-    <ul>
-      <% groceryItems.forEach(function(groceryItem) { %>
-      <li><%= groceryItem %></li>
-      <% }) %>
-    </ul>
-  </div>
-
-  <div>
-    <form method="post" action="/">
-
-      <div>
-        <img id="0" draggable src="../img/bread.png">
-        <input type="submit" value="Brood" name="groceryItem">
+  <div class="wrapper clearfix">
+    <div class="my-grocery-list">
+      <div class="my-grocery-list-wrap">
+        <h1>Mijn boodschappenlijstje</h1>
+        <h2>Een broodje tostie</h2>
+        <ul>
+          <% groceryItems.forEach(function(groceryItem) { %>
+          <li><%= groceryItem %></li>
+          <% }) %>
+        </ul>
+        <a href="/clear">Boodschappenlijstje leegmaken</a>
       </div>
+    </div>
 
-      <div>
-        <img id="1" draggable src="../img/cheese.png">
-        <input type="submit" value="Kaas" name="groceryItem">
+    <div class="all-grocery">
+      <div class="all-grocery-wrap clearfix">
+        <form method="post" action="/">
+        <div id="first-option">
+          <img id="0" draggable src="../img/bread.png">
+          <input type="submit" value="Brood" name="groceryItem">
+        </div>
+
+        <div id="second-option">
+          <img id="1" draggable src="../img/cheese.png">
+          <input type="submit" value="Kaas" name="groceryItem">
+        </div>
+
+        <div id="third-option">
+          <img id="2" draggable src="../img/ham.png">
+          <input type="submit" value="Ham" name="groceryItem">
+        </div>
+
+        <div id="four-option">
+          <img id="3" draggable src="../img/butter.png">
+          <input type="submit" value="Boter" name="groceryItem">
+        </div>
+
+      </form>
       </div>
-
-      <div>
-        <img id="2" draggable src="../img/ham.png">
-        <input type="submit" value="Ham" name="groceryItem">
-      </div>
-
-      <div>
-        <img id="3" draggable src="../img/butter.png">
-        <input type="submit" value="Boter" name="groceryItem">
-      </div>
-
-      <div>
-        <input id="4" type="type" name="groceryItem">
-        <input type="submit" value="plaatsen">
-      </div>
-
-    </form>
+    </div>
   </div>
 
 <% include partials/footer.ejs %>
