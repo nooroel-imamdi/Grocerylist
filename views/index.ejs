@@ -1,22 +1,22 @@
 <% include partials/head.ejs %>
 
   <div class="wrapper clearfix">
+    <h1>Boodschappenlijstje</h1>
+    <h2>een broodje tostie</h2>
     <div class="my-grocery-list">
       <div class="my-grocery-list-wrap">
-        <h1>Mijn boodschappenlijstje</h1>
-        <h2>Een broodje tostie</h2>
         <ul>
           <% groceryItems.forEach(function(groceryItem) { %>
           <li><%= groceryItem %></li>
           <% }) %>
         </ul>
-        <a href="/clear">Boodschappenlijstje leegmaken</a>
+        <a href="/clear">Lijstje leegmaken</a>
       </div>
     </div>
 
-    <div class="all-grocery">
+    <div class="all-grocery clearfix">
       <div class="all-grocery-wrap clearfix">
-        <form method="post" action="/">
+        <form method="post" action="/" class="clearfix">
         <div id="first-option">
           <img id="0" draggable src="../img/bread.png">
           <input type="submit" value="Brood" name="groceryItem">
@@ -32,7 +32,7 @@
           <input type="submit" value="Ham" name="groceryItem">
         </div>
 
-        <div id="four-option">
+        <div id="fourth-option">
           <img id="3" draggable src="../img/butter.png">
           <input type="submit" value="Boter" name="groceryItem">
         </div>
