@@ -97,22 +97,22 @@ Zoals eerder stond beschreven is de *core functionality*:
 ### HTML
 ![HTML only](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/htmlonly.png?raw=true)
 
-## Devices & Browsers
+### Devices & Browsers
 De app is doorlopen en getest op verschillende devices. Hieronder volgt een overzicht de tests.
 
-### MacBook (Desktop)
+#### MacBook (Desktop)
 
-#### Google Chrome
+##### Google Chrome
 ![Google Chrome - lege lijst](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/macbook-googlechrome.png?raw=true)
 
 ![Google Chrome - lijst lijst](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/macbook-googlechrome-list.jpeg?raw=true)
 
-#### Safari
+##### Safari
 ![Safari - lege lijst](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/macbook-safari.png?raw=true)
 
 ![Safari - lijst lijst](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/macbook-safari-list.jpeg?raw=true)
 
-#### Firefox
+##### Firefox
 ![Firefox - lege lijst](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/macbook-firefox.png?raw=true)
 
 ![Firefox - lijst lijst](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/macbook-firefox-list.jpeg?raw=true)
@@ -120,9 +120,9 @@ De app is doorlopen en getest op verschillende devices. Hieronder volgt een over
 **Werking**
 De browsers *Google Chrome*, *Safari* en *Firefox* ondersteunen allen de *drag and drop*-optie. Bovendien is het ook mogelijk om middels de `input`-buttons de lijst in te vullen. Ook is het in deze browsers mogelijk om het lijstje weer leeg te maken.
 
-### Windows 7
+#### Windows 7
 
-#### Internet Explorer 8
+##### Internet Explorer 8
 ![Internet Explorer 8 - lege lijst](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/win7-internetexplorer8.png?raw=true)
 
 ![Internet Explorer 8 - lijst lijst](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/win7-internetexplorer8-list.jpeg?raw=true)
@@ -130,14 +130,14 @@ De browsers *Google Chrome*, *Safari* en *Firefox* ondersteunen allen de *drag a
 **Werking**
 Op Internet Explorer 8 wordt de *drag and drop*-optie niet ondersteund. De fallback, de `input`-button, werkt optimaal en maakt het mogelijk om de core functionality uit te blijven voeren in *IE8*. Bovendien is het in *IE8* mogelijk om de lijst leeg te maken.
 
-### Samsung S7
+#### Samsung S7
 
-#### Google Chrome
+##### Google Chrome
 ![Google Chrome - lege lijst](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/samsungs7-chrome.jpeg?raw=true)
 
 ![Google Chrome - lijst lijst](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/samsungs7-chrome-list.jpeg?raw=true)
 
-#### Samung Internetbrowser
+##### Samung Internetbrowser
 ![Samsung Internetbrowser - lege lijst](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/samsungs7-samsungbrowser.jpeg?raw=true)
 
 ![Samsung Internetbrowser - lijst lijst](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/samsungs7-samsungbrowser-list.jpeg?raw=true)
@@ -145,6 +145,38 @@ Op Internet Explorer 8 wordt de *drag and drop*-optie niet ondersteund. De fallb
 **Werking**
 Bij zowel de *Google Chrome*- als de *Samsung Internet*-browser kan het boodschappenlijstje gevuld worden middels de `input`-velden. De *Drag and drop* werkt niet in deze browser op deze device. Verder kan je gebruiker het boodschappenlijstje legen middels de `input`-knop *lijstje leegmaken*.
 
+### Afbeeldingen
+Alle afbeeldingen beschikken over een `alt`-tag, waardoor niet geladen afbeeldingen alsnog kunnen aantonen wat de functie van de betreffende afbeelding is.
+
+### Kleur
+De kleuren en contrasten zijn getest met de tool *Sim Daltonism*. Hieronder volgt een overzicht.
+
+![Sim Daltonism - Normal view](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/simdaltonism-color-normalview.png?raw=true)
+*Sim Daltonism - Normal view*
+
+![Sim Daltonism - Deuternomaly](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/simdaltonism-color-deuteranomaly.png?raw=true)
+*Sim Daltonism - Deuternomaly*
+
+![Sim Daltonism - Deuteranopia](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/simdaltonism-color-deuteranopia.png?raw=true)
+*Sim Daltonism - Deuteranopia*
+
+![Sim Daltonism - Monochromacy](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/simdaltonism-color-monochromacy.png?raw=true)
+*Sim Daltonism - Monochromacy*
+
+![Sim Daltonism - Partial Monochromacy](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/simdaltonism-color-partialmonochromacy.png?raw=true)
+*Sim Daltonism - Partial Monochromacy*
+
+![Sim Daltonism - Protanomaly](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/simdaltonism-color-protanomaly.png?raw=true)
+*Sim Daltonism - Protanomaly*
+
+![Sim Daltonism - Protanopia](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/simdaltonism-color-protanopia.png?raw=true)
+*Sim Daltonism - Protanopia*
+
+![Sim Daltonism - Tritanomaly](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/simdaltonism-color-tritanomaly.png?raw=true)
+*Sim Daltonism - Tritanomaly*
+
+![Sim Daltonism - Pritanopia](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/simdaltonism-color-tritanopia.png?raw=true)
+*Sim Daltonism - Tritanopia*
 
 ## Installatie
 
