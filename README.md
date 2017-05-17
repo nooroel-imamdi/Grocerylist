@@ -105,17 +105,17 @@ De app is doorlopen en getest op verschillende devices. Hieronder volgt een over
 ##### Google Chrome
 ![Google Chrome - lege lijst](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/macbook-googlechrome.png?raw=true)
 
-![Google Chrome - lijst lijst](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/macbook-googlechrome-list.jpeg?raw=true)
+![Google Chrome - lijst](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/macbook-googlechrome-list.png?raw=true)
 
 ##### Safari
 ![Safari - lege lijst](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/macbook-safari.png?raw=true)
 
-![Safari - lijst lijst](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/macbook-safari-list.jpeg?raw=true)
+![Safari - lijst ](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/macbook-safari-list.png?raw=true)
 
 ##### Firefox
 ![Firefox - lege lijst](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/macbook-firefox.png?raw=true)
 
-![Firefox - lijst lijst](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/macbook-firefox-list.jpeg?raw=true)
+![Firefox - lijst ](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/macbook-firefox-list.png?raw=true)
 
 **Werking**
 De browsers *Google Chrome*, *Safari* en *Firefox* ondersteunen allen de *drag and drop*-optie. Bovendien is het ook mogelijk om middels de `input`-buttons de lijst in te vullen. Ook is het in deze browsers mogelijk om het lijstje weer leeg te maken.
@@ -125,7 +125,7 @@ De browsers *Google Chrome*, *Safari* en *Firefox* ondersteunen allen de *drag a
 ##### Internet Explorer 8
 ![Internet Explorer 8 - lege lijst](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/win7-internetexplorer8.png?raw=true)
 
-![Internet Explorer 8 - lijst lijst](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/win7-internetexplorer8-list.jpeg?raw=true)
+![Internet Explorer 8 - lijst ](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/win7-internetexplorer8-list.png?raw=true)
 
 **Werking**
 Op Internet Explorer 8 wordt de *drag and drop*-optie niet ondersteund. De fallback, de `input`-button, werkt optimaal en maakt het mogelijk om de core functionality uit te blijven voeren in *IE8*. Bovendien is het in *IE8* mogelijk om de lijst leeg te maken.
