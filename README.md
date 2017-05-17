@@ -97,8 +97,28 @@ Zoals eerder stond beschreven is de *core functionality*:
 ### HTML
 ![HTML only](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/htmlonly.png?raw=true)
 
-## Devices
+## Devices & Browsers
 De app is doorlopen en getest op verschillende devices. Hieronder volgt een overzicht de tests.
+
+### MacBook
+
+#### Google Chrome
+![Google Chrome - lege lijst](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/macbook-googlechrome.png?raw=true)
+
+![Google Chrome - lijst lijst](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/macbook-googlechrome-list.jpeg?raw=true)
+
+#### Safari
+![Safari - lege lijst](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/macbook-safari.png?raw=true)
+
+![Safari - lijst lijst](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/macbook-safari-list.jpeg?raw=true)
+
+#### Firefox
+![Firefox - lege lijst](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/macbook-firefox.png?raw=true)
+
+![Firefox - lijst lijst](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/macbook-firefox-list.jpeg?raw=true)
+
+**Werking**
+De browsers *Google Chrome*, *Safari* en *Firefox* ondersteunen allen de *drag and drop*-optie. Bovendien is het ook mogelijk om middels de `input`-buttons de lijst in te vullen. Ook is het in deze browsers mogelijk om het lijstje weer leeg te maken.
 
 ### Samsung S7
 
@@ -113,7 +133,7 @@ De app is doorlopen en getest op verschillende devices. Hieronder volgt een over
 ![Samsung Internetbrowser - lijst lijst](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/samsungs7-samsungbrowser-list.jpeg?raw=true)
 
 **Werking**
-Bij zowel de *Google Chrome*- als de *Samsung Internet*-browser kan het boodschappenlijstje gevuld worden middels de `input`-velden. De *Drag and drop* werkt niet in deze browser op deze device.
+Bij zowel de *Google Chrome*- als de *Samsung Internet*-browser kan het boodschappenlijstje gevuld worden middels de `input`-velden. De *Drag and drop* werkt niet in deze browser op deze device. Verder kan je gebruiker het boodschappenlijstje legen middels de `input`-knop *lijstje leegmaken*.
 
 
 ## Installatie
