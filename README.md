@@ -82,10 +82,10 @@ In Microsoft Internet Explorer en Microsoft Edge wordt deze feature in de meest 
 #### Fallback
 De fallback voor *Drag and Drop* is het `input`-element waarmee de gebruikers, die niet de mogelijkheid hebben tot *Drag and Drop*, alsnog de *core-functionaliteit* kunnen uitvoeren, namelijk het toevoegen van een ingrediënt aan het boodschappenlijstje door op een button te klikken.
 
-Aangezien dit `server-side` wordt afgehandeld, is deze fallback ook operationeel indien de gebruik niet beschikt over `JavaScript`.
+Aangezien dit `server-side` wordt afgehandeld, is deze fallback ook operationeel indien de gebruiker niet beschikt over `JavaScript`.
 
 ### Boodschappenlijstje leegmaken
-Het leegmaken van het boodschappenlijstje wordt eveneens afgehandeld middels `server-side`. Hierdoor wordt deze feature ook ondersteund indien er geen `JavaScript beschikbaar is.`
+Het leegmaken van het boodschappenlijstje wordt eveneens afgehandeld middels `server-side`. Hierdoor wordt deze feature ook ondersteund indien er geen `JavaScript` beschikbaar is.
 
 ## Progressive Enhancement
 De `HTML` is de basislaag van de website. Hierin wordt de structuur beschreven waarbinnen de content zich bevindt. Hetgeen na deze basislaag komt is een extra laag, oftewel een enhancement: verrijkingen van de basislaag.
@@ -100,7 +100,7 @@ Zoals eerder stond beschreven is de *core functionality*:
 ## Devices & Browsers
 De app is doorlopen en getest op verschillende devices. Hieronder volgt een overzicht de tests.
 
-### MacBook
+### MacBook (Desktop)
 
 #### Google Chrome
 ![Google Chrome - lege lijst](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/macbook-googlechrome.png?raw=true)
@@ -119,6 +119,16 @@ De app is doorlopen en getest op verschillende devices. Hieronder volgt een over
 
 **Werking**
 De browsers *Google Chrome*, *Safari* en *Firefox* ondersteunen allen de *drag and drop*-optie. Bovendien is het ook mogelijk om middels de `input`-buttons de lijst in te vullen. Ook is het in deze browsers mogelijk om het lijstje weer leeg te maken.
+
+### Windows 7
+
+#### Internet Explorer 8
+![Internet Explorer 8 - lege lijst](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/win7-internetexplorer8.png?raw=true)
+
+![Internet Explorer 8 - lijst lijst](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/win7-internetexplorer8-list.jpeg?raw=true)
+
+**Werking**
+Op Internet Explorer 8 wordt de *drag and drop*-optie niet ondersteund. De fallback, de `input`-button, werkt optimaal en maakt het mogelijk om de core functionality uit te blijven voeren in *IE8*. Bovendien is het in *IE8* mogelijk om de lijst leeg te maken.
 
 ### Samsung S7
 
