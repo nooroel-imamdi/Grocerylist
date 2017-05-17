@@ -97,6 +97,23 @@ Zoals eerder stond beschreven is de *core functionality*:
 ### HTML
 ![HTML only](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/htmlonly.png?raw=true)
 
+## Devices
+De app is doorlopen en getest op verschillende devices. Hieronder volgt een overzicht de tests.
+
+### Samsung S7
+
+#### Google Chrome
+![Google Chrome - lege lijst](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/samsungs7-chrome.jpeg?raw=true)
+
+![Google Chrome - lijst lijst](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/samsungs7-chrome-list.jpeg?raw=true)
+
+#### Samung Internetbrowser
+![Samsung Internetbrowser - lege lijst](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/samsungs7-samsungbrowser.jpeg?raw=true)
+
+![Samsung Internetbrowser - lijst lijst](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/samsungs7-samsungbrowser-list.jpeg?raw=true)
+
+**Werking**
+Bij zowel de *Google Chrome*- als de *Samsung Internet*-browser kan het boodschappenlijstje gevuld worden middels de `input`-velden. De *Drag and drop* werkt niet in deze browser op deze device.
 
 
 ## Installatie
