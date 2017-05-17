@@ -28,51 +28,181 @@
     font-weight: normal;
     font-style: normal;
 }
-html,body{
-  font-family: 'open_sansregular';
+html,body {
+  background-color: #fffbcc;
+  color: #333;
+  font-family: 'open_sansregular', Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
+}
+h1 {
+  font-size: 2em;
+  font-family: 'open_sanslight';
+  font-style: italic;
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 40em) {
+  h1 {
+    font-size: 1.7em;
+  }
+}
+h2 {
+  font-size: 1.3em;
+  font-family: 'calligraffittiregular', 'Adobe Garamond', 'Georgia', serif;
+  margin-top: .3em;
+}
+.wrapper {
+  width: 80%;
+  margin: 0 auto 0;
+}
+@media only screen and (min-width: 64.063em) {
+  .wrapper{
+    margin: 5em auto 0;
+  }
 }
 /**/
-.my-grocery-list{
+.my-grocery-list {
+  position: relative;
+  float: left;
   background-color: #FFFBCC;
-  width: 100%;
-  min-height: 40%;
+  width: 40%;
   padding-bottom: 16px;
   padding-bottom: 1em;
 }
-.my-grocery-list-wrap{
+@media only screen and (max-width: 40em) {
+  .my-grocery-list {
+    float: none;
+    width: 100%;
+  }
+}
+.my-grocery-list-wrap {
   width: 70%;
+  height: 20em;
   margin: 0 auto;
 }
-.all-grocery{
-  width: 100%;
-  height: 40%;
-  margin-top: 10%;
+@media only screen and (max-width: 40em) {
+  .my-grocery-list-wrap {
+    width: 100%;
+  }
 }
-.all-grocery-wrap{
-  width: 70%;
+a[href="/clear"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: 'calligraffittiregular', 'Adobe Garamond', 'Georgia', serif;
+  color: #FD8283;
+}
+.all-grocery {
+  float: right;
+  background-color: #fff;
+  border: 1px solid #052a4e;
+  width: 40%;
+  min-height: 100px;
+}
+@media only screen and (max-width: 40em) {
+  .all-grocery {
+    float: none;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .all-grocery {
+    float:right;
+    width: 35%;
+  }
+}
+.all-grocery-wrap {
+  width: 80%;
   margin: 0 auto;
+  padding: 1em;
 }
-.all-grocery-wrap div{
-  float: left;
-  width: 7em;
+@media only screen and (max-width: 40em) {
+  .all-grocery-wrap {
+    width: 90%;
+    padding: 0;
+    margin: 0;
+    padding: 5%;
+  }
+}
+.all-grocery-wrap div {
+  width: 49%;
+  display: inline-block;
   text-align: center;
-  margin-top: 15px;
-  margin-top: 2em;
+  padding: 1em 0;
 }
-ul{
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .all-grocery-wrap div {
+    width: 100%;
+  }
+}
+.all-grocery-wrap div#first-option,
+.all-grocery-wrap div#third-option {
+  border-right: 1px solid #dfe3e8;
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .all-grocery-wrap div#first-option,
+  .all-grocery-wrap div#third-option {
+    border: none;
+  }
+}
+.all-grocery-wrap div#first-option,
+.all-grocery-wrap div#second-option {
+  border-bottom: 1px solid #dfe3e8;
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .all-grocery-wrap div#third-option {
+    border-bottom: 1px solid #dfe3e8;
+  }
+}
+ul {
   font-family: 'calligraffittiregular', 'Adobe Garamond', 'Georgia', serif;
   padding: 0;
   list-style: none;
+  height: 10em;
+  overflow-x: scroll;
+}
+@media only screen and (min-width: 64.063em) {
+  ul {
+    height: 14.8em;
+  }
 }
 /* Affordance img */
-img{
+img {
   cursor: -webkit-grab;
 	cursor: -moz-grab;
 	cursor: move;
   width: 80px;
   height: 80px;
+}
+input {
+  display: block;
+  margin: 1.5em auto 0;
+  padding: .8em 1.5em;
+  font-size: .8em;
+  border: 2px solid #5ac0da;
+  background: none;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #5ac0da;
+}
+/* fix floating issue */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/*
+* For IE 6/7 only
+* Include this rule to trigger hasLayout and contain floats.
+*/
+
+.clearfix {
+  *zoom: 1;
 }
