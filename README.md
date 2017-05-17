@@ -216,6 +216,8 @@ Bij het uitvoeren van de onderstaande command, wordt de app opgestart.
 nodemon
 ```
 
+App is nu bereikbaar via `localhost:7000`
+
 ## Sources
 - Icons made by [Freepik](http://www.flaticon.com/authors/freepik) from [Flaticon](www.flaticon.com)
 - [HTML5 Drag and Drop, W3Schools](https://www.w3schools.com/html/html5_draganddrop.asp)
