@@ -29,7 +29,7 @@
     font-style: normal;
 }
 html,body {
-  background-color: #fffbcc;
+  background-color: #f9f7f5;
   color: #333;
   font-family: 'open_sansregular', Helvetica, Arial, sans-serif;
   margin: 0;
@@ -43,6 +43,11 @@ h1 {
   margin-bottom: 0;
 }
 @media only screen and (max-width: 40em) {
+  h1 {
+    font-size: 1.7em;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
   h1 {
     font-size: 1.7em;
   }
@@ -65,8 +70,7 @@ h2 {
 .my-grocery-list {
   position: relative;
   float: left;
-  background-color: #FFFBCC;
-  width: 40%;
+  width: 55%;
   padding-bottom: 16px;
   padding-bottom: 1em;
 }
@@ -77,6 +81,7 @@ h2 {
   }
 }
 .my-grocery-list-wrap {
+  position: relative;
   width: 70%;
   height: 20em;
   margin: 0 auto;
@@ -86,10 +91,15 @@ h2 {
     width: 100%;
   }
 }
+@media only screen and (min-width: 64.063em) {
+  .my-grocery-list-wrap {
+    height: 26em;
+  }
+}
 a[href="/clear"] {
   position: absolute;
-  top: 0;
-  right: 0;
+  bottom: 1.5em;
+  left: 0;
   font-family: 'calligraffittiregular', 'Adobe Garamond', 'Georgia', serif;
   color: #FD8283;
 }
@@ -99,6 +109,9 @@ a[href="/clear"] {
   border: 1px solid #052a4e;
   width: 40%;
   min-height: 100px;
+}
+.feedbackSucces {
+  background-color: #C2ECD3;
 }
 @media only screen and (max-width: 40em) {
   .all-grocery {
@@ -113,6 +126,7 @@ a[href="/clear"] {
   }
 }
 .all-grocery-wrap {
+  position: relative;
   width: 80%;
   margin: 0 auto;
   padding: 1em;
@@ -186,23 +200,4 @@ input {
 }
 input[type="submit"]:hover {
   background-color: #5ac0da;
-}
-/* fix floating issue */
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
-}
-
-.clearfix:after {
-  clear: both;
-}
-
-/*
-* For IE 6/7 only
-* Include this rule to trigger hasLayout and contain floats.
-*/
-
-.clearfix {
-  *zoom: 1;
 }
