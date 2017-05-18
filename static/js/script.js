@@ -5,46 +5,26 @@ var userChoices = document.querySelectorAll('input');
 function drag(e) {
 	e.dataTransfer.setData('id', e.target.id);
 }
-
-function allowDrop(e) {
+function dropToggle(e) {
 	e.preventDefault();
 }
-
-// function dontDrop(e) {
-// 	e.preventDefault();
-// }
-
 function drop(e) {
 	e.preventDefault();
 	var id = e.dataTransfer.getData('id');
 	userChoices[id].click();
-
 }
-
-function dragSucces(e) {
-	groceryList.forEach(function(groceryList) {
-
-	});
-}
-
-function dragFail(e) {
-	groceryList.forEach(function (groceryList) {
-
-	});
-}
-
-img.forEach(function (img) {
-  return img.addEventListener('dragstart', drag);
+img.forEach(function(img) {
+  img.addEventListener('dragstart', drag);
 });
 
-groceryList.forEach(function (e) {
-  return e.addEventListener('dragover', allowDrop);
+groceryList.forEach(function(e) {
+  e.addEventListener('dragover', dropToggle);
 });
 
-groceryList.forEach(function (e) {
-  return e.addEventListener('dragleave', allowDrop);
+groceryList.forEach(function(e) {
+  e.addEventListener('dragleave', dropToggle);
 });
 
-groceryList.forEach(function (e) {
-  return e.addEventListener('drop', drop);
+groceryList.forEach(function(e) {
+  e.addEventListener('drop', drop);
 });
