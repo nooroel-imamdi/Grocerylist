@@ -65,7 +65,7 @@ h2 {
   background-color: #ffffff;
   border: 1px solid #d9d5d0;
   border-radius: 5px;
-  padding: 1em;
+  padding: 1.3em;
 }
 .my-grocery-list-wrap ul{
   margin: 1em 0 1.5em;
@@ -95,6 +95,15 @@ a[href="/clear"]:hover {
 .all-grocery-wrap {
   width: 100%;
 }
+p.only-select,
+p.dragandrop-available{
+  color: #9a8e87;
+  margin-top: .5em;
+  margin-left: .3em;
+  font-style: italic;
+  font-size: .9em;
+  line-height: 1.7;
+}
 @media only screen and (max-width: 40em) {
   .all-grocery {
     float: right;
@@ -122,9 +131,6 @@ img {
   display: block;
   margin: 0 auto;
   /* change cursor to grab-state when hover on img */
-  cursor: -webkit-grab;
-	cursor: -moz-grab;
-  cursor: move;
 }
 input {
   background-color: #FFE164;
@@ -159,4 +165,12 @@ input[type="submit"]:hover {
 
 .clearfix {
   *zoom: 1;
+}
+.hide{
+  display: none;
+}
+.cursor{
+  cursor: -webkit-grab;
+	cursor: -moz-grab;
+  cursor: move;
 }
