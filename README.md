@@ -100,6 +100,55 @@ Zoals eerder stond beschreven is de *core functionality*:
 ### HTML
 ![HTML only](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/htmlonly.png?raw=true)
 
+Als er slechts sprake is van HTML, dan is de bovenstaande afbeelding het resultaat:
+
+- Uitleg wordt getoond
+- Afbeeldingen worden getoond
+- Gebruiker kan middels de knoppen (`input`-elementen) items toevoegen
+
+### CSS
+![HTML en CSS](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/html-css.png?raw=true)
+
+Als CSS beschikbaar is, dan is de bovenstaande afbeelding het resultaat:
+
+- Gebruiker krijgt opgemaakte interface te zien
+- Er wordt een onderscheid gemaakt tussen boodschappenlijst en items
+- Door middel van buttons wordt duidelijk welke items toegevoegd kunnen worden
+- De knop 'leegmaken' is duidelijk vormgegeven
+
+### JS
+In het geval van JavaScript zijn er twee gevallen beschikbaar:
+
+- Met draggable
+- Zonder draggable
+
+![JavaScript zonder Draggable](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/js-without-draggable.png?raw=true)
+
+![JavaScript met Draggable](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/js-with-draggable.png?raw=true)
+
+Indien de optie `draggable` beschikbaar is in de browser van de gebruiker, dan verschijnt de tekst:
+
+> Selecteer of sleep een item naar het boodschappenlijstje
+
+Indien dat niet het geval is, dan wordt de volgende tekst getoond:
+
+> Selecteer een item
+
+#### Feature detection & Fallback
+De werking van deze melding wordt op de volgende wijze in gang gezet binnen JavaScript.
+
+```
+if('classList' || 'draggable') {
+	onlySelect.classList.add('hide');
+	dragandropAvailable.classList.remove('hide');
+	cursorMove.classList.add('cursor');
+}
+```
+Aangezien `classList` ook niet in alle browsers beschikbaar is, wordt er een `if`-statement gemaakt met een ` logical operators`. Hierbij worden, in het geval `classList` én `draggable` beschikbaar zijn, de volgende zaken uitgevoerd:
+
+- De gebruiker krijgt de instructies dat slepen ook mogelijk door een toggle tussen twee `p`-elementen.
+- De `cursor`-class wordt toegepast op de afbeeldingen, zodat de gebruiker bij een hover over de `img` de indicatie krijgt dat slepen ook mogelijk is.
+
 ### Devices & Browsers
 De app is doorlopen en getest op verschillende devices. Hieronder volgt een overzicht de tests.
 
