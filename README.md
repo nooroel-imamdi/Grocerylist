@@ -149,7 +149,8 @@ Aangezien `classList` ook niet in alle browsers beschikbaar is, wordt er een `if
 - De gebruiker krijgt de instructies dat slepen ook mogelijk door een toggle tussen twee `p`-elementen.
 - De `cursor`-class wordt toegepast op de afbeeldingen, zodat de gebruiker bij een hover over de `img` de indicatie krijgt dat slepen ook mogelijk is.
 
-### Devices & Browsers
+
+### Devices & Browsers (Devicelab)
 De app is doorlopen en getest op verschillende devices. Hieronder volgt een overzicht de tests.
 
 #### MacBook (Desktop)
@@ -172,6 +173,7 @@ De app is doorlopen en getest op verschillende devices. Hieronder volgt een over
 **Werking**
 De browsers *Google Chrome*, *Safari* en *Firefox* ondersteunen allen de *drag and drop*-optie. Bovendien is het ook mogelijk om middels de `input`-buttons de lijst in te vullen. Ook is het in deze browsers mogelijk om het lijstje weer leeg te maken.
 
+
 #### Windows 7
 
 ##### Internet Explorer 8
@@ -181,6 +183,7 @@ De browsers *Google Chrome*, *Safari* en *Firefox* ondersteunen allen de *drag a
 
 **Werking**
 Op Internet Explorer 8 wordt de *drag and drop*-optie niet ondersteund. De fallback, de `input`-button, werkt optimaal en maakt het mogelijk om de core functionality uit te blijven voeren in *IE8*. Bovendien is het in *IE8* mogelijk om de lijst leeg te maken.
+
 
 #### Samsung S7
 
@@ -196,6 +199,63 @@ Op Internet Explorer 8 wordt de *drag and drop*-optie niet ondersteund. De fallb
 
 **Werking**
 Bij zowel de *Google Chrome*- als de *Samsung Internet*-browser kan het boodschappenlijstje gevuld worden middels de `input`-velden. De *Drag and drop* werkt niet in deze browser op deze device. Verder kan je gebruiker het boodschappenlijstje legen middels de `input`-knop *lijstje leegmaken*.
+
+
+### HTC Nexus
+![iPad mini](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/htc-nexus.jpg?raw=true)
+
+**Werking**
+Het boodschappenlijstje kan gevuld worden middels de `input`-velden. De *Drag and drop* werkt niet op deze device. Verder kan je gebruiker het boodschappenlijstje legen middels de `input`-knop *lijstje leegmaken*.
+
+
+### iPad mini
+![iPad mini](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/ipadmini.jpg?raw=true)
+
+**Werking**
+Het boodschappenlijstje kan gevuld worden middels de `input`-velden. De *Drag and drop* werkt niet op deze device. Verder kan je gebruiker het boodschappenlijstje legen middels de `input`-knop *lijstje leegmaken*.
+
+
+### iPad Touch
+![iPad touch](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/ipodtouch.jpg?raw=true)
+
+**Werking**
+Het boodschappenlijstje kan gevuld worden middels de `input`-velden. De *Drag and drop* werkt niet op deze device. Verder kan je gebruiker het boodschappenlijstje legen middels de `input`-knop *lijstje leegmaken*.
+
+
+### Kindle
+![Kindle](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/kindle.jpg?raw=true)
+
+**Werking**
+Het boodschappenlijstje kan gevuld worden middels de `input`-velden. De *Drag and drop* werkt niet op deze device. Verder kan je gebruiker het boodschappenlijstje legen middels de `input`-knop *lijstje leegmaken*.
+
+
+### Nokia
+![Nokia](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/nokia.jpg?raw=true)
+
+**Werking**
+Het boodschappenlijstje kan gevuld worden middels de `input`-velden. De *Drag and drop* werkt niet op deze device. Verder kan je gebruiker het boodschappenlijstje legen middels de `input`-knop *lijstje leegmaken*.
+
+
+### OP Phone
+![Op](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/op.jpg?raw=true)
+
+**Werking**
+Het boodschappenlijstje kan gevuld worden middels de `input`-velden. De *Drag and drop* werkt niet op deze device. Verder kan je gebruiker het boodschappenlijstje legen middels de `input`-knop *lijstje leegmaken*.
+
+
+### Samsung Note 3
+![Samsung Note 3](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/samsungnote3.jpg?raw=true)
+
+**Werking**
+Het boodschappenlijstje kan gevuld worden middels de `input`-velden. De *Drag and drop* werkt niet op deze device. Verder kan je gebruiker het boodschappenlijstje legen middels de `input`-knop *lijstje leegmaken*.
+
+
+### Windows Tablet
+![Windows Tablet](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/windows-tablet.jpg?raw=true)
+
+**Werking**
+Het boodschappenlijstje kan gevuld worden middels de `input`-velden. De *Drag and drop* werkt niet op deze device. Verder kan je gebruiker het boodschappenlijstje legen middels de `input`-knop *lijstje leegmaken*.
+
 
 ### Afbeeldingen
 Alle afbeeldingen beschikken over een `alt`-tag, waardoor niet geladen afbeeldingen alsnog kunnen aantonen wat de functie van de betreffende afbeelding is.
