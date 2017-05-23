@@ -61,12 +61,12 @@ Om deze reden heb ik ervoor gekozen om het `div`-element te gebruiken, in plaats
 
 ### JavaScript
 
-## Features
+#### Features
 - Drag and drop ingrediënten
 - Ingrediënten toevoegen d.m.v. button
 - Boodschappenlijstje leegmaken
 
-### Drag and Drop ingrediënten
+#### Drag and Drop ingrediënten
 ![Support Drag and Drop](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/draganddropsupport.png?raw=true)
 
 > Drag and drop wordt door `42.11%` van de browsers ondersteund.
@@ -79,25 +79,25 @@ De volgende browser ondersteunen *Drag and Drop* **niet**:
 
 In Microsoft Internet Explorer en Microsoft Edge wordt deze feature in de meest recente browsers **gedeeltelijk** ondersteund.
 
-#### Fallback
+##### Fallback
 De fallback voor *Drag and Drop* is het `input`-element waarmee de gebruikers, die niet de mogelijkheid hebben tot *Drag and Drop*, alsnog de *core-functionaliteit* kunnen uitvoeren, namelijk het toevoegen van een ingrediënt aan het boodschappenlijstje door op een button te klikken.
 
 Aangezien dit `server-side` wordt afgehandeld, is deze fallback ook operationeel indien de gebruiker niet beschikt over `JavaScript`.
 
-### Ingrediënten toevoegen d.m.v. button
+#### Ingrediënten toevoegen d.m.v. button
 Naast de *drag and drop*-methode is het ook mogelijk om je lijstje aan te vullen door op de knop met daarop het gewenste product te klikken. Zoals hierboven wordt beschreven, functioneert dit ook als fallback voor de *drag and drop*-optie.
 
-### Boodschappenlijstje leegmaken
+#### Boodschappenlijstje leegmaken
 Het leegmaken van het boodschappenlijstje wordt eveneens afgehandeld middels `server-side`. Hierdoor wordt deze feature ook ondersteund indien er geen `JavaScript` beschikbaar is.
 
-## Progressive Enhancement
+### Progressive Enhancement
 De `HTML` is de basislaag van de website. Hierin wordt de structuur beschreven waarbinnen de content zich bevindt. Hetgeen na deze basislaag komt is een extra laag, oftewel een enhancement: verrijkingen van de basislaag.
 
 Zoals eerder stond beschreven is de *core functionality*:
 
 > Ik wil boodschappen-om-tostis-te-maken in mijn boodschappenlijstje kunnen gooien
 
-### HTML
+#### HTML
 ![HTML only](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/htmlonly.png?raw=true)
 
 Als er slechts sprake is van HTML, dan is de bovenstaande afbeelding het resultaat:
@@ -106,7 +106,7 @@ Als er slechts sprake is van HTML, dan is de bovenstaande afbeelding het resulta
 - Afbeeldingen worden getoond
 - Gebruiker kan middels de knoppen (`input`-elementen) items toevoegen
 
-### CSS
+#### CSS
 ![HTML en CSS](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/html-css.png?raw=true)
 
 Als CSS beschikbaar is, dan is de bovenstaande afbeelding het resultaat:
@@ -116,7 +116,7 @@ Als CSS beschikbaar is, dan is de bovenstaande afbeelding het resultaat:
 - Door middel van buttons wordt duidelijk welke items toegevoegd kunnen worden
 - De knop 'leegmaken' is duidelijk vormgegeven
 
-### JS
+#### JavaScript
 In het geval van JavaScript zijn er twee gevallen beschikbaar:
 
 - Met draggable
