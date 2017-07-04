@@ -30,6 +30,8 @@ function drop(e) {
 	e.preventDefault();
 	var id = e.dataTransfer.getData('id');
 	userChoices[id].click();
+	this.classList.add('succes-drop');
+	setTimeout(1000);
 }
 if (Array.prototype.forEach) {
 	img.forEach(function(img) {
