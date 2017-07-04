@@ -7,7 +7,7 @@ var onlySelect = document.querySelector('.only-select');
 var dragandropAvailable = document.querySelector('.dragandrop-available');
 
 // feature detection if draggable and classList is available
-if('classList' || 'draggable') {
+if('classList' in document.documentElement || 'draggable' in document.createElement('span')) {
 	onlySelect.classList.add('hide');
 	dragandropAvailable.classList.remove('hide');
 	cursorMove.classList.add('cursor');
