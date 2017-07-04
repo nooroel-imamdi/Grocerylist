@@ -12,6 +12,11 @@ if('classList' in document.documentElement || 'draggable' in document.createElem
 	dragandropAvailable.classList.remove('hide');
 	cursorMove.classList.add('cursor');
 }
+// feature detection for mobile because drag and drop doesn't work on mobile
+if(window.matchMedia("(max-width: 480px)").matches) {
+	onlySelect.classList.remove('hide');
+	dragandropAvailable.classList.add('hide');
+}
 
 function drag(e) {
 	e.dataTransfer.setData('id', e.target.id);
