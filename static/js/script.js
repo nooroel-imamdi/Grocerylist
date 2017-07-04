@@ -26,19 +26,20 @@ function drop(e) {
 	var id = e.dataTransfer.getData('id');
 	userChoices[id].click();
 }
+if (Array.prototype.forEach) {
+	img.forEach(function(img) {
+	  img.addEventListener('dragstart', drag);
+	});
 
-img.forEach(function(img) {
-  img.addEventListener('dragstart', drag);
-});
+	groceryList.forEach(function(e) {
+	  e.addEventListener('dragover', dropToggle);
+	});
 
-groceryList.forEach(function(e) {
-  e.addEventListener('dragover', dropToggle);
-});
+	groceryList.forEach(function(e) {
+	  e.addEventListener('dragleave', dropToggle);
+	});
 
-groceryList.forEach(function(e) {
-  e.addEventListener('dragleave', dropToggle);
-});
-
-groceryList.forEach(function(e) {
-  e.addEventListener('drop', drop);
-});
+	groceryList.forEach(function(e) {
+	  e.addEventListener('drop', drop);
+	});
+}
