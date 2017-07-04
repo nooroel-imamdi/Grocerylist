@@ -11,6 +11,9 @@ if('classList' in document.documentElement || 'draggable' in document.createElem
 	onlySelect.classList.add('hide');
 	dragandropAvailable.classList.remove('hide');
 	cursorMove.classList.add('cursor');
+	console.log('classList exists');
+} else {
+	console.log('classList doesnt exists');
 }
 // feature detection for mobile because drag and drop doesn't work on mobile
 if(window.matchMedia("(max-width: 480px)").matches) {
