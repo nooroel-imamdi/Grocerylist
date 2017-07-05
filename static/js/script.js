@@ -7,18 +7,13 @@ var onlySelect = document.querySelector('.only-select');
 var dragandropAvailable = document.querySelector('.dragandrop-available');
 
 // feature detection if draggable and classList is available
-if('classList' in document.documentElement || 'draggable' in document.createElement('span')) {
+if('classList' in document.documentElement && 'draggable' in document.createElement('span')) {
 	onlySelect.classList.add('hide');
 	dragandropAvailable.classList.remove('hide');
 	cursorMove.classList.add('cursor');
 	console.log('classList exists');
 } else {
 	console.log('classList doesnt exists');
-}
-// feature detection for mobile because drag and drop doesn't work on mobile
-if(window.matchMedia("(max-width: 480px)").matches) {
-	onlySelect.classList.remove('hide');
-	dragandropAvailable.classList.add('hide');
 }
 
 function drag(e) {
