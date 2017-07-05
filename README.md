@@ -138,7 +138,7 @@ Indien dat niet het geval is, dan wordt de volgende tekst getoond:
 De werking van deze melding wordt op de volgende wijze in gang gezet binnen JavaScript.
 
 ```
-if('classList' || 'draggable') {
+if('classList' in document.documentElement && 'draggable' in document.createElement('span')) {
 	onlySelect.classList.add('hide');
 	dragandropAvailable.classList.remove('hide');
 	cursorMove.classList.add('cursor');
