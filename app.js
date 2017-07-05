@@ -2,9 +2,11 @@
 var express = require('express');
 var path = require('path');
 var bodyParser = require('body-parser');
+var compression = require('compression')
 
 // Config
 var app = express();
+app.use(compression())
 
 // View engine
 app.set('views', path.join(__dirname, 'views'));
@@ -23,6 +25,7 @@ var groceryItems = [];
 app.post('/', function(req, res) {
   // Push data of grocery-items to empty array 'groceryItems'
 	groceryItems.push(req.body.groceryItem);
+  console.log(groceryItems);
 	res.redirect('/');
 })
 
