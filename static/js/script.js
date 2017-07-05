@@ -11,9 +11,9 @@ if('classList' in document.documentElement && 'draggable' in document.createElem
 	onlySelect.classList.add('hide');
 	dragandropAvailable.classList.remove('hide');
 	cursorMove.classList.add('cursor');
-	console.log('classList exists');
+	console.log('classList and draggable supported by current browser');
 } else {
-	console.log('classList doesnt exists');
+	console.log('classList and draggable doesnt supported by current browser');
 }
 
 function drag(e) {
