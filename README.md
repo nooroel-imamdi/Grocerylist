@@ -139,15 +139,14 @@ De werking van deze melding wordt op de volgende wijze in gang gezet binnen Java
 
 ```
 if('classList' in document.documentElement && 'draggable' in document.createElement('span')) {
-	onlySelect.classList.add('hide');
-	dragandropAvailable.classList.remove('hide');
-	cursorMove.classList.add('cursor');
+	...
 }
 ```
-Aangezien `classList` ook niet in alle browsers beschikbaar is, wordt er een `if`-statement gemaakt met een ` logical operators`. Hierbij worden, in het geval `classList` én `draggable` beschikbaar zijn, de volgende zaken uitgevoerd:
+Aangezien `classList` ook niet in alle browsers beschikbaar is, wordt er een `if`-statement gemaakt met een `logical operators`. Hierbij worden, in het geval `classList` én `draggable` beschikbaar zijn, de volgende zaken uitgevoerd:
 
-- De gebruiker krijgt de instructies dat slepen ook mogelijk door een toggle tussen twee `p`-elementen.
+- De gebruiker krijgt de instructies dat slepen ook mogelijk middels een tip.
 - De `cursor`-class wordt toegepast op de afbeeldingen, zodat de gebruiker bij een hover over de `img` de indicatie krijgt dat slepen ook mogelijk is.
+- De functionaliteiten die `draggable` en `classList` bevatten worden uitgevoerd.
 
 
 ### Devices & Browsers (Devicelab)
@@ -182,7 +181,7 @@ De browsers *Google Chrome*, *Safari* en *Firefox* ondersteunen allen de *drag a
 ![Internet Explorer 8 - lijst ](https://github.com/nooroel-imamdi/browser-technologies-her/blob/master/docs/win7-internetexplorer8-list.png?raw=true)
 
 **Werking**
-Op Internet Explorer 8 wordt de *drag and drop*-optie niet ondersteund. De fallback, de `input`-button, werkt optimaal en maakt het mogelijk om de core functionality uit te blijven voeren in *IE8*. Bovendien is het in *IE8* mogelijk om de lijst leeg te maken.
+Op Internet Explorer 8 wordt de *drag and drop*-optie niet ondersteund. De fallback, de `input`-button, werkt optimaal en maakt het mogelijk om de *core functionality* uit te blijven voeren in *IE8*. Bovendien is het in *IE8* mogelijk om de lijst leeg te maken.
 
 
 #### Samsung S7
