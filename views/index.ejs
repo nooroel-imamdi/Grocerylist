@@ -6,7 +6,6 @@
     <div class="my-grocery-list">
       <div class="my-grocery-list-wrap">
         <p class="only-select">Selecteer een ingredient</p>
-        <p class="dragandrop-available hide">Selecteer of sleep een item naar het boodschappenlijstje</p>
         <ul>
           <% groceryItems.forEach(function(groceryItem) { %>
           <li><%= groceryItem %></li>
@@ -19,6 +18,7 @@
     <div class="all-grocery clearfix">
       <div class="all-grocery-wrap clearfix">
         <form method="post" action="/" class="clearfix">
+
         <div id="first-option">
           <img id="0" draggable src="../img/bread.png" alt="Brood">
           <input type="submit" value="Brood" name="groceryItem">
@@ -41,7 +41,14 @@
 
       </form>
       </div>
+      <div class="dragandrop-available hide">
+        <span class="arrow-draw"></span>
+        <h3>tip!</h3>
+        <p>Sleep de gewenste items naar het boodschappenlijstje</p>
+      </div>
     </div>
+
+
   </div>
 
 <% include partials/footer.ejs %>
