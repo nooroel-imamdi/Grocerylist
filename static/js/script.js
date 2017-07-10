@@ -11,7 +11,7 @@ if('classList' in document.documentElement
 		&& 'draggable' in document.createElement('span')
 		&& 'addEventListener' in window
 		&& window.NodeList
-		&& !NodeList.prototype.forEach
+		&& NodeList.prototype.forEach
 		&& "files" in DataTransfer.prototype) {
 
 	dragandropAvailable.classList.remove('hide');
