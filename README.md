@@ -135,18 +135,29 @@ Indien dat niet het geval is, dan wordt de volgende tekst getoond:
 > Selecteer een item
 
 #### Feature detection & Fallback
-De werking van deze melding wordt op de volgende wijze in gang gezet binnen JavaScript.
-
-```
-if('classList' in document.documentElement && 'draggable' in document.createElement('span')) {
-	...
-}
-```
-Aangezien `classList` ook niet in alle browsers beschikbaar is, wordt er een `if`-statement gemaakt met een `logical operators`. Hierbij worden, in het geval `classList` én `draggable` beschikbaar zijn, de volgende zaken uitgevoerd:
+Aangezien `draggable`, `classList`, `addEventListener`, `forEach` en `dataTransfer` niet in alle browsers beschikbaar zijn, wordt er een `if`-statement gemaakt met een `logical operators`. Hierbij worden, in het geval `draggable`, `classList`, `addEventListener`, `forEach` en `dataTransfer` beschikbaar zijn, de volgende zaken uitgevoerd:
 
 - De gebruiker krijgt de instructies dat slepen ook mogelijk middels een tip.
 - De `cursor`-class wordt toegepast op de afbeeldingen, zodat de gebruiker bij een hover over de `img` de indicatie krijgt dat slepen ook mogelijk is.
-- De functionaliteiten die `draggable` en `classList` bevatten worden uitgevoerd.
+- De functionaliteiten die `draggable`, `classList`, `addEventListener`, `forEach` en `dataTransfer` bevatten worden uitgevoerd.
+
+##### Features in app
+- `addEventListener` - ondersteund vanaf IE9+
+- `classList` - (gedeeltelijk) ondersteund vanaf IE10+
+- `draggable` - Niet ondersteund op mobiele browsers en (gedeeltelijk) ondersteund vanaf IE6.
+- `forEach` - (gedeeltelijk) ondersteund vanaf IE10+
+- `dataTransfer` - Ondersteund vanaf IE10+
+
+Feature detection binnen `JavaScript`
+```
+if('classList' in document.documentElement
+		&& 'draggable' in document.createElement('span')
+		&& 'addEventListener' in window
+		&& Array.prototype.forEach
+    && "files" in DataTransfer.prototype) {
+	...
+}
+```
 
 
 ### Devices & Browsers (Devicelab)
