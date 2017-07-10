@@ -114,6 +114,11 @@ p.only-select {
   display: inline-block;
   border-radius: 5px;
 }
+@media only screen and (max-width: 40em) {
+  .dragandrop-available {
+    display: none;
+  }
+}
 .dragandrop-available h3 {
   font-family: 'calligraffittiregular';
   font-size: 1.5em;
@@ -165,7 +170,11 @@ img {
 input {
   background-color: #FFE164;
   border: 0;
+  display: inline-block;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   border-radius: 5px;
+  -khtml-border-radius: 5px;
   width: 100%;
   height: 3.5em;
   margin-top: 1em;
@@ -179,6 +188,7 @@ input[type="submit"]:hover {
 .succes-drop {
   background: rgba(102, 205, 170, 0.5);
   border-radius: 5px;
+  color: #ffffff;
 }
 .indication-drop {
   border: 2px solid #66CDAA;

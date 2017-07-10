@@ -10,7 +10,8 @@ var dragandropAvailable = document.querySelector('.dragandrop-available');
 if('classList' in document.documentElement
 		&& 'draggable' in document.createElement('span')
 		&& 'addEventListener' in window
-		&& Array.prototype.forEach
+		&& window.NodeList
+		&& !NodeList.prototype.forEach
 		&& "files" in DataTransfer.prototype) {
 
 	dragandropAvailable.classList.remove('hide');
@@ -32,7 +33,6 @@ if('classList' in document.documentElement
 		userChoices[id].click();
 		// delay to show feedback clear
 		groceryListWrap.classList.add('succes-drop');
-		setTimeout(4000);
 	}
 
 	img.forEach(function(img) {
@@ -54,4 +54,11 @@ if('classList' in document.documentElement
 	console.log('classList and draggable supported by current browser');
 } else {
 	console.log('classList and draggable doesnt supported by current browser');
+}
+
+if (window.NodeList && NodeList.prototype.forEach) {
+	console.log('forEach');
+} else {
+	console.log('forEach not');
+
 }

@@ -151,9 +151,10 @@ Aangezien `draggable`, `classList`, `addEventListener`, `forEach` en `dataTransf
 Feature detection binnen `JavaScript`
 ```
 if('classList' in document.documentElement
-		&& 'draggable' in document.createElement('span')
-		&& 'addEventListener' in window
-		&& Array.prototype.forEach
+    && 'draggable' in document.createElement('span')
+    && 'addEventListener' in window
+    && window.NodeList
+    && !NodeList.prototype.forEach
     && "files" in DataTransfer.prototype) {
 	...
 }
