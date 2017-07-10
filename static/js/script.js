@@ -6,8 +6,12 @@ var userChoices = document.querySelectorAll('input');
 var onlySelect = document.querySelector('.only-select');
 var dragandropAvailable = document.querySelector('.dragandrop-available');
 
-// feature detection if draggable and classList is available
-if('classList' in document.documentElement && 'draggable' in document.createElement('span')) {
+// feature detection on classList, draggable, addEventListener, forEach
+if('classList' in document.documentElement
+		&& 'draggable' in document.createElement('span')
+		&& 'addEventListener' in window
+		&& Array.prototype.forEach
+		&& "files" in DataTransfer.prototype) {
 
 	dragandropAvailable.classList.remove('hide');
 
