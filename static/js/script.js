@@ -22,8 +22,6 @@ if('classList' in document.documentElement
 
 	function dropToggle(e) {
 		e.preventDefault();
-
-		// delay to show feedback clear
 		groceryListWrap.classList.add('indication-drop');
 	}
 
@@ -31,7 +29,7 @@ if('classList' in document.documentElement
 		e.preventDefault();
 		var id = e.dataTransfer.getData('id');
 		userChoices[id].click();
-		// delay to show feedback clear
+		groceryListWrap.classList.remove('indication-drop');
 		groceryListWrap.classList.add('succes-drop');
 	}
 
@@ -51,14 +49,4 @@ if('classList' in document.documentElement
 	groceryList.forEach(function(e) {
 	  e.addEventListener('drop', drop);
 	});
-	console.log('classList and draggable supported by current browser');
-} else {
-	console.log('classList and draggable doesnt supported by current browser');
-}
-
-if (window.NodeList && NodeList.prototype.forEach) {
-	console.log('forEach');
-} else {
-	console.log('forEach not');
-
 }
