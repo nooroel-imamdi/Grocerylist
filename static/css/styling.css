@@ -186,12 +186,11 @@ input[type="submit"]:hover {
   text-decoration: underline;
 }
 .succes-drop {
-  background: rgba(102, 205, 170, 0.5);
+  border: 2px solid #66CDAA;
   border-radius: 5px;
-  color: #ffffff;
 }
 .indication-drop {
-  border: 2px solid #66CDAA;
+  border: 2px solid #FF9478;
   border-radius: 5px;
 }
 /* fix floating issue */
